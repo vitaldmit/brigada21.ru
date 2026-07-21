@@ -642,11 +642,11 @@ function Portfolio() {
                     <span className="text-[#F97316] font-semibold text-sm">{proj.price}</span>
                   </div>
                   {/* Hover button */}
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
+                  {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-2 group-hover:translate-y-0">
                     <button className="w-full py-2.5 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-white text-sm font-semibold hover:bg-white/30 transition-colors">
                       Подробнее о проекте
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </AnimatedSection>
@@ -654,8 +654,10 @@ function Portfolio() {
         </div>
 
         <AnimatedSection className="mt-10 text-center">
-          <button className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl border-2 border-[#1E3A8A] text-[#1E3A8A] font-bold hover:bg-[#1E3A8A] hover:text-white transition-all">
-            Смотреть все проекты
+          <button
+            onClick={() => { document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }); }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl border-2 border-[#1E3A8A] text-[#1E3A8A] font-bold hover:bg-[#1E3A8A] hover:text-white transition-all">
+            Запросить все проекты
             <ArrowRight className="size-5" />
           </button>
         </AnimatedSection>
