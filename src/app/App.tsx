@@ -272,14 +272,14 @@ function Header() {
           {/* Right actions */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+78352000000"
+              href="tel:+79530105335"
               className={cn(
                 "flex items-center gap-1.5 text-sm font-semibold transition-colors",
                 scrolled ? "text-gray-700 hover:text-[#1E3A8A]" : "text-white"
               )}
             >
               <Phone className="size-3.5" />
-              +7 (8352) 00-00-00
+              +7 (953) 010-53-35
             </a>
             <button
               onClick={() => scrollTo("#estimate")}
@@ -318,9 +318,9 @@ function Header() {
             </button>
           ))}
           <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col gap-2">
-            <a href="tel:+78352000000" className="flex items-center gap-2 px-4 py-3 text-gray-700 font-semibold">
+            <a href="tel:+79530105335" className="flex items-center gap-2 px-4 py-3 text-gray-700 font-semibold">
               <Phone className="size-4 text-[#1E3A8A]" />
-              +7 (8352) 00-00-00
+              +7 (953) 010-53-35
             </a>
             <button
               onClick={() => scrollTo("#estimate")}
@@ -471,12 +471,12 @@ function WhyUs() {
               <p className="mt-3 text-blue-200 text-lg">Бесплатная консультация и выезд на участок</p>
             </div>
             <div className="relative shrink-0 flex flex-col sm:flex-row gap-3">
-              <a href="tel:+78352000000"
+              <a href="tel:+79530105335"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-[#1E3A8A] font-bold hover:bg-blue-50 transition-colors">
                 <Phone className="size-4" />
                 Позвонить
               </a>
-              <a href="https://wa.me/78352000000"
+              <a href="https://wa.me/79530105335"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#F97316] text-white font-bold hover:bg-orange-500 transition-colors">
                 <MessageCircle className="size-4" />
                 WhatsApp
@@ -933,14 +933,14 @@ function Faq() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
-                href="tel:+78352000000"
+                href="tel:+79530105335"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#1E3A8A] text-white font-semibold hover:bg-blue-800 transition-colors"
               >
                 <Phone className="size-4" />
                 Задать вопрос
               </a>
               <a
-                href="https://wa.me/78352000000"
+                href="https://wa.me/79530105335"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl border-2 border-gray-200 text-gray-700 font-semibold hover:border-[#1E3A8A] hover:text-[#1E3A8A] transition-colors"
               >
                 <MessageCircle className="size-4" />
@@ -1005,9 +1005,9 @@ function Contact() {
                 {
                   icon: Phone,
                   label: "Телефон",
-                  value: "+7 (8352) 00-00-00",
+                  value: "+7 (953) 010-53-35",
                   sub: "Звонки ежедневно с 8:00 до 20:00",
-                  href: "tel:+78352000000",
+                  href: "tel:+79530105335",
                   color: "bg-[#1E3A8A]",
                 },
                 {
@@ -1015,7 +1015,7 @@ function Contact() {
                   label: "WhatsApp",
                   value: "Написать в WhatsApp",
                   sub: "Отвечаем в течение 15 минут",
-                  href: "https://wa.me/78352000000",
+                  href: "https://wa.me/79530105335",
                   color: "bg-green-600",
                 },
                 {
@@ -1179,9 +1179,9 @@ function Footer() {
             <h4 className="font-[Manrope] font-bold text-white mb-4">Контакты</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+78352000000" className="flex items-center gap-2.5 text-gray-400 hover:text-white transition-colors group">
+                <a href="tel:+79530105335" className="flex items-center gap-2.5 text-gray-400 hover:text-white transition-colors group">
                   <Phone className="size-4 text-[#F97316]" />
-                  <span className="text-sm">+7 (8352) 00-00-00</span>
+                  <span className="text-sm">+7 (953) 010-53-35</span>
                 </a>
               </li>
               <li>
@@ -1237,7 +1237,7 @@ function FloatingCta() {
       )}
     >
       <a
-        href="https://wa.me/78352000000"
+        href="https://wa.me/79530105335"
         className="flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-green-500 text-white font-bold shadow-2xl shadow-green-500/40 hover:bg-green-600 transition-all hover:scale-105"
         aria-label="Написать в WhatsApp"
       >
