@@ -94,7 +94,7 @@ const PROCESS_STEPS = [
   { icon: Phone, num: "01", title: "Консультация", desc: "Бесплатный выезд на участок. Обсуждаем ваши пожелания, бюджет и сроки." },
   { icon: FileText, num: "02", title: "Смета", desc: "Детальная смета в течение 3 дней. Фиксированная стоимость без изменений." },
   { icon: CheckCircle, num: "03", title: "Договор", desc: "Юридически защищённый договор с графиком платежей и этапами работ." },
-  { icon: Truck, num: "04", title: "Строительство", desc: "Работы по утверждённому проекту. Еженедельные фотоотчёты на WhatsApp." },
+  { icon: Truck, num: "04", title: "Строительство", desc: "Работы по утверждённому проекту. Еженедельные фотоотчёты на Telegram." },
   { icon: Key, num: "05", title: "Сдача объекта", desc: "Приёмка с вами. Документация, гарантийный паспорт, ключи в руки." },
 ];
 
@@ -119,7 +119,7 @@ const TESTIMONIALS = [
     name: "Алексей Петров",
     city: "Чебоксары",
     rating: 5,
-    text: "Построили нам дом 160м² из газобетона за 7 месяцев. Всё точно по смете, никаких доплат. Бригада профессиональная, отчёты в WhatsApp каждую неделю. Рекомендую без сомнений!",
+    text: "Построили нам дом 160м² из газобетона за 7 месяцев. Всё точно по смете, никаких доплат. Бригада профессиональная, отчёты в Telegram каждую неделю. Рекомендую без сомнений!",
     project: "Дом 160 м²",
   },
   {
@@ -144,7 +144,7 @@ const FAQS = [
   { q: "Работаете ли вы по договору?", a: "Да, мы работаем исключительно по официальному договору подряда. В нём прописаны фиксированная стоимость, сроки, этапы оплаты, ответственность сторон и гарантийные обязательства." },
   { q: "Какие гарантии вы даёте?", a: "Мы предоставляем официальную гарантию 5 лет на все конструктивные элементы и 2 года на отделочные работы. При выявлении дефектов устраняем их за наш счёт." },
   { q: "Вы работаете с материнским капиталом и ипотекой?", a: "Да, мы работаем с материнским капиталом, сельской ипотекой и другими программами господдержки. Поможем с оформлением документов." },
-  { q: "Можно ли посмотреть объекты в процессе строительства?", a: "Конечно! Мы организуем выезд на строящиеся объекты в любое удобное время. Также отправляем еженедельные фотоотчёты по WhatsApp." },
+  { q: "Можно ли посмотреть объекты в процессе строительства?", a: "Конечно! Мы организуем выезд на строящиеся объекты в любое удобное время. Также отправляем еженедельные фотоотчёты по Telegram." },
 ];
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
@@ -476,10 +476,10 @@ function WhyUs() {
                 <Phone className="size-4" />
                 Позвонить
               </a>
-              <a href="https://wa.me/79530105335"
+              <a href="https://t.me/vitaldmit"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#F97316] text-white font-bold hover:bg-orange-500 transition-colors">
                 <MessageCircle className="size-4" />
-                WhatsApp
+                Telegram
               </a>
             </div>
           </div>
@@ -940,11 +940,11 @@ function Faq() {
                 Задать вопрос
               </a>
               <a
-                href="https://wa.me/79530105335"
+                href="https://t.me/vitaldmit"
                 className="flex items-center gap-2 px-6 py-3.5 rounded-xl border-2 border-gray-200 text-gray-700 font-semibold hover:border-[#1E3A8A] hover:text-[#1E3A8A] transition-colors"
               >
                 <MessageCircle className="size-4" />
-                WhatsApp
+                Telegram
               </a>
             </div>
 
@@ -1012,26 +1012,26 @@ function Contact() {
                 },
                 {
                   icon: MessageCircle,
-                  label: "WhatsApp",
-                  value: "Написать в WhatsApp",
+                  label: "Telegram",
+                  value: "Написать в Telegram",
                   sub: "Отвечаем в течение 15 минут",
-                  href: "https://wa.me/79530105335",
+                  href: "https://t.me/vitaldmit",
                   color: "bg-green-600",
                 },
                 {
                   icon: Send,
                   label: "Telegram",
-                  value: "@stroymaster_chv",
+                  value: "@brigada21",
                   sub: "Быстрые ответы и фотоотчёты",
-                  href: "https://t.me/stroymaster_chv",
+                  href: "https://t.me/brigada21",
                   color: "bg-sky-500",
                 },
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "info@stroymaster21.ru",
+                  value: "info@brigada21.ru",
                   sub: "Для документации и КП",
-                  href: "mailto:info@stroymaster21.ru",
+                  href: "mailto:info@brigada21.ru",
                   color: "bg-[#F97316]",
                 },
               ].map((c) => (
@@ -1185,9 +1185,9 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@stroymaster21.ru" className="flex items-center gap-2.5 text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:info@brigada21.ru" className="flex items-center gap-2.5 text-gray-400 hover:text-white transition-colors">
                   <Mail className="size-4 text-[#F97316]" />
-                  <span className="text-sm">info@stroymaster21.ru</span>
+                  <span className="text-sm">info@brigada21.ru</span>
                 </a>
               </li>
               <li className="flex items-start gap-2.5 text-gray-400">
@@ -1237,12 +1237,12 @@ function FloatingCta() {
       )}
     >
       <a
-        href="https://wa.me/79530105335"
+        href="https://t.me/vitaldmit"
         className="flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-green-500 text-white font-bold shadow-2xl shadow-green-500/40 hover:bg-green-600 transition-all hover:scale-105"
-        aria-label="Написать в WhatsApp"
+        aria-label="Написать в Telegram"
       >
         <MessageCircle className="size-5" />
-        <span className="text-sm">WhatsApp</span>
+        <span className="text-sm">Telegram</span>
       </a>
     </div>
   );
