@@ -71,7 +71,7 @@ const NAV_LINKS = [
 ];
 
 const WHY_ITEMS = [
-  { icon: Award, title: "15 лет опыта", desc: "Построили более 50 домов по всей Чувашии. Каждый проект — наша гордость." },
+  { icon: Award, title: "16 лет опыта", desc: "Построили более 50 домов по всей Чувашии. Каждый проект — наша гордость." },
   { icon: Shield, title: "Фиксированная цена", desc: "Стоимость зафиксирована в договоре. Никаких сюрпризов и скрытых платежей." },
   { icon: CheckCircle, title: "Гарантия 5 лет", desc: "Официальная гарантия на все виды работ. Устраним любой дефект за наш счёт." },
   { icon: Users, title: "Лицензированная бригада", desc: "Только штатные специалисты с допусками СРО. Без субподрядчиков." },
@@ -109,7 +109,7 @@ const PORTFOLIO = [
 
 const STATS = [
   { value: 50, suffix: "+", label: "Построенных домов" },
-  { value: 15, suffix: " лет", label: "На рынке" },
+  { value: 16, suffix: " лет", label: "На рынке" },
   { value: 98, suffix: "%", label: "Сданы в срок" },
   { value: 5, suffix: " лет", label: "Гарантия" },
 ];
@@ -366,17 +366,17 @@ function Hero() {
           </div>
 
           <h1 className="font-[Manrope] font-black text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight">
-            Строим дома,{" "}
+            Строительная бригада,{" "}
             <span className="relative inline-block">
               <span className="text-[#F97316]">которыми</span>
             </span>
             <br />
-            гордятся годами
+            гордятся заказчики
           </h1>
 
           <p className="mt-6 text-xl text-white/75 max-w-xl leading-relaxed">
             Фиксированная цена. Гарантия 5 лет. Сдача в срок.
-            Строительство домов под ключ в Чувашской Республике с 2009 года.
+            Строительные работы под ключ в Чувашской Республике с 2009 года.
           </p>
 
           {/* CTAs */}
@@ -401,7 +401,7 @@ function Hero() {
           <div className="mt-14 flex flex-wrap gap-6 sm:gap-10">
             {[
               { val: "50+", label: "построенных домов" },
-              { val: "15 лет", label: "на рынке Чувашии" },
+              { val: "16 лет", label: "на рынке Чувашии" },
               { val: "5 лет", label: "официальная гарантия" },
             ].map((s) => (
               <div key={s.val} className="flex items-center gap-3">
@@ -418,7 +418,7 @@ function Hero() {
 
       {/* Scroll hint */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
-        <span className="text-xs uppercase tracking-widest">Листайте</span>
+        <span className="text-xs uppercase tracking-widest">Далее</span>
         <div className="size-6 border border-white/20 rounded-full flex items-center justify-center">
           <ChevronDown className="size-3 animate-bounce" />
         </div>
@@ -1133,7 +1133,7 @@ function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Строим дома, которыми гордятся годами. Работаем по всей Чувашской Республике с 2009 года.
+              Строительная бригада, которыми гордятся заказчики. Работаем по всей Чувашской Республике с 2009 года.
             </p>
             <div className="mt-6 flex gap-3">
               {[Instagram, Youtube, MessageCircle].map((Icon, i) => (
