@@ -64,8 +64,8 @@ const IMG = {
 const NAV_LINKS = [
   { label: "О нас", href: "#about" },
   { label: "Услуги", href: "#services" },
-  { label: "Портфолио", href: "#portfolio" },
   { label: "Процесс", href: "#process" },
+  { label: "Портфолио", href: "#portfolio" },
   { label: "Отзывы", href: "#testimonials" },
   { label: "Контакты", href: "#contact" },
 ];
@@ -514,9 +514,11 @@ function Services() {
                 </div>
                 <h3 className="font-[Manrope] font-bold text-gray-900 text-lg mb-2">{svc.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
-                <div className="mt-4 flex items-center gap-1 text-[#F97316] text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+                <button
+                  onClick={() => { document.querySelector("#estimate")?.scrollIntoView({ behavior: "smooth" }); }}
+                  className="mt-4 flex items-center gap-1 text-[#F97316] text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
                   Узнать цену <ChevronRight className="size-4" />
-                </div>
+                </button>
               </div>
             </AnimatedSection>
           ))}
@@ -820,7 +822,7 @@ function EstimateForm() {
           <AnimatedSection delay={150}>
             <SectionLabel>Бесплатная смета</SectionLabel>
             <h2 className="mt-4 font-[Manrope] font-black text-4xl lg:text-5xl text-gray-900 leading-tight">
-              Рассчитайте стоимость вашего дома
+              Узнайте цену
             </h2>
             <p className="mt-4 text-gray-500">
               Оставьте заявку — перезвоним в течение 30 минут и назначим бесплатный выезд на участок
@@ -1137,7 +1139,7 @@ function Footer() {
             </p>
             <div className="mt-6 flex gap-3">
               {[Instagram, Youtube, MessageCircle].map((Icon, i) => (
-                <a key={i} href="#"
+                <a key={i} href="https://t.me/vitaldmit"
                   className="size-9 rounded-xl bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-[#1E3A8A] hover:text-white transition-all">
                   <Icon className="size-4" />
                 </a>
