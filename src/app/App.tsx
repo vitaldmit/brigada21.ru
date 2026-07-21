@@ -245,7 +245,7 @@ function Header() {
             </div>
             <div className="leading-none">
               <div className={cn("font-black text-base font-[Manrope] transition-colors", scrolled ? "text-[#1E3A8A]" : "text-white")}>
-                СтройМастер
+                Строительная бригада
               </div>
               <div className={cn("text-[10px] uppercase tracking-widest font-medium transition-colors", scrolled ? "text-gray-400" : "text-blue-200")}>
                 Чувашия
@@ -1020,10 +1020,10 @@ function Contact() {
                 },
                 {
                   icon: Send,
-                  label: "Telegram",
-                  value: "@brigada21",
+                  label: "MAX",
+                  value: "Написать в MAX",
                   sub: "Быстрые ответы и фотоотчёты",
-                  href: "https://t.me/brigada21",
+                  href: "https://max.ru/u/f9LHodD0cOJ35l13Qquis3wZaNSyvQxOqIMcMADzPEx1ndnOcSYOHSICOl4",
                   color: "bg-sky-500",
                 },
                 {
@@ -1128,7 +1128,7 @@ function Footer() {
                 <HardHat className="size-5 text-white" />
               </div>
               <div>
-                <div className="font-black text-base font-[Manrope] text-white">СтройМастер</div>
+                <div className="font-black text-base font-[Manrope] text-white">Строительная бригада</div>
                 <div className="text-[10px] uppercase tracking-widest text-gray-500">Чувашия</div>
               </div>
             </div>
@@ -1207,7 +1207,7 @@ function Footer() {
         {/* Bottom */}
         <div className="mt-14 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-xs">
-            © 2009–2026 СтройМастер. Все права защищены.
+            © 2009–2026 Строительная бригада. Все права защищены.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-600 hover:text-gray-400 text-xs transition-colors">Политика конфиденциальности</a>
